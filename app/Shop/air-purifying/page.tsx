@@ -1,0 +1,161 @@
+"use client"
+
+import ProductGrid from "@/components/product-grid"
+
+const products = [
+    {
+        id: 24,
+        name: "Lucky Jade Plant With Self Watering Pot",
+        rating: 4.5,
+        reviews: 222,
+        price: 1299,
+        originalPrice: 1496,
+        discount: "36% OFF",
+        features: ["Air Purifying", "Perfect Gift"],
+        image: "/images/Jade.jpeg",
+    },
+    {
+        id: 25,
+        name: "Money Plant With Self Watering Pot",
+        rating: 4.8,
+        reviews: 215,
+        price: 1319,
+        originalPrice: 1539,
+        discount: "34% OFF",
+        features: ["Vastu Approved", "Air Purifying"],
+        image: "/images/money.jpeg",
+    },
+    {
+        id: 26,
+        name: "Snake Plant With Self Watering Pot",
+        rating: 4.7,
+        reviews: 145,
+        price: 1199,
+        originalPrice: 1499,
+        discount: "20% OFF",
+        features: ["Low Light", "Air Purifying"],
+        image: "/images/snake.png",
+    },
+    {
+        id: 27,
+        name: "Aglaonema Plant With Self Watering Pot",
+        rating: 4.6,
+        reviews: 178,
+        price: 1399,
+        originalPrice: 1699,
+        discount: "18% OFF",
+        features: ["Low Maintenance", "Indoor Plant"],
+        image: "/images/aglaonema.png",
+    },
+    {
+        id: 28,
+        name: "Peacock Plant With Self Watering Pot",
+        rating: 4.7,
+        reviews: 156,
+        price: 1299,
+        originalPrice: 1599,
+        discount: "19% OFF",
+        features: ["Decorative", "Humidity Loving"],
+        image: "/images/peacock.png",
+    },
+    {
+        id: 29,
+        name: "Oyster Plant With Self Watering Pot",
+        rating: 4.5,
+        reviews: 134,
+        price: 1199,
+        originalPrice: 1399,
+        discount: "14% OFF",
+        features: ["Easy Care", "Colorful Foliage"],
+        image: "/images/oyster.jpg",
+    },
+    {
+        id: 30,
+        name: "Rhoeo Tricolor Plant With Self Watering Pot",
+        rating: 4.6,
+        reviews: 167,
+        price: 1099,
+        originalPrice: 1399,
+        discount: "21% OFF",
+        features: ["Colorful", "Easy Care"],
+        image: "/images/rhoeotricolor.jpg",
+    },
+    {
+        id: 31,
+        name: "Spider Plant With Self Watering Pot",
+        rating: 4.7,
+        reviews: 189,
+        price: 1149,
+        originalPrice: 1449,
+        discount: "21% OFF",
+        features: ["Air Purifying", "Pet Friendly"],
+        image: "/images/spider.png",
+    },
+    {
+        id: 32,
+        name: "Calathea Triostar Plant With Self Watering Pot",
+        rating: 4.8,
+        reviews: 198,
+        price: 1499,
+        originalPrice: 1799,
+        discount: "17% OFF",
+        features: ["Exotic", "Prayer Plant"],
+        image: "/images/calathea.jpg",
+    },
+    {
+        id: 33,
+        name: "Golden Hahnii Snake Plant With Self Watering Pot",
+        rating: 4.8,
+        reviews: 167,
+        price: 1299,
+        originalPrice: 1599,
+        discount: "19% OFF",
+        features: ["Air Purifying", "Low Maintenance"],
+        image: "/images/golden-hahnii.png",
+    },
+    {
+        id: 34,
+        name: "Lucky Bonsai With Self Watering Pot",
+        rating: 4.9,
+        reviews: 189,
+        price: 2499,
+        originalPrice: 2999,
+        discount: "17% OFF",
+        features: ["Indoor Bonsai", "Good Luck"],
+        image: "/images/bonsai.jpg",
+    },
+    {
+        id: 35,
+        name: "Zamia Green With Self Watering Pot",
+        rating: 4.7,
+        reviews: 145,
+        price: 1799,
+        originalPrice: 2199,
+        discount: "18% OFF",
+        features: ["Air Purifying", "Low Light"],
+        image: "/images/zamia.jpg",
+    },
+    {
+        id: 36,
+        name: "Philodendron Broken Heart With Self Watering Pot",
+        rating: 4.8,
+        reviews: 178,
+        price: 1599,
+        originalPrice: 1999,
+        discount: "20% OFF",
+        features: ["Trailing Plant", "Air Purifying"],
+        image: "/images/philodendron.jpeg",
+    },
+    // Add more air purifying plants
+]
+
+export default function AirPurifyingPlantsPage() {
+    return (
+        <div className="py-16">
+            <div className="max-w-7xl mx-auto px-4">
+                <h1 className="text-4xl font-bold text-[#2F4F4F] mb-8">Air Purifying Plants</h1>
+                <ProductGrid products={products} />
+            </div>
+        </div>
+    )
+}
